@@ -162,13 +162,13 @@ img {
             text-overflow: ellipsis;
         }
         .prix {
-            animation: price-translation 1.5s ease-in 0s both;
+            animation: price-translation 0.5s ease-in 0s both;
         }
         .check-slide {
-           animation: check-slide 1.5s ease-out reverse 0s both;
+           animation: check-slide 0.5s ease-out reverse 0s both;
         }
         .fa-circle-check {
-            animation: check-circle-rotation 1s cubic-bezier(0.7, 0.3, 0.6, 1) 0.8s;
+            animation: check-circle-rotation 1s cubic-bezier(0.7, 0.3, 0.6, 1);
         }
     }
 }
@@ -206,15 +206,18 @@ img {
     .menu {
         width: 600px;
         margin: auto;
+        position:static;
         h1 {
+            width: 300px;
             margin-left: 150px;
+            position: relative;
             .fa-regular {
                 position: absolute;
-                right: 180px;
+                right: -10px;
             }
             .fa-solid {
                 position: absolute;
-                right: 180px;
+                right: -10px;
             }
         }
         .menu_starters {

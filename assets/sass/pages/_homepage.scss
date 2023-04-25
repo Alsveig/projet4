@@ -148,6 +148,9 @@ header, main, footer {
     animation: content-visibility 100ms linear 2s forwards;
 }
 
+.page-loader {
+    position: relative;
+}
 .loader {
     opacity: 1;
     width: 100px;
@@ -158,7 +161,7 @@ header, main, footer {
     box-sizing: border-box;
     position: absolute;
     top: 200px;
-    left: 130px;
+    left: 500px;
     animation: loader 2s linear 1 forwards;
     }
 
@@ -296,14 +299,17 @@ header, main, footer {
             }
         }
     }
-    .footer-homepage {
-        margin-top: 0px;
+    .page-loader {
+        position: relative;
     }
     .loader {
         width: 250px;
         height: 250px;
         position: absolute;
-        left: 600px;
+        left: 140px;
+    }
+    .footer-homepage {
+        margin-top: 0px;
     }
 }
 
