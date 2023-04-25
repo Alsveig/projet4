@@ -1,0 +1,23 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+@import '../components/icons';
+@import '../layout/forms';
+@import '../layout/reusable';
+@import '../base/base';
+
+.button {
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.button--squared {
+    background: $tertiary-color;
+    color: darken($tertiary-color, 40%);
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 7px 9px 7px 9px;
+}

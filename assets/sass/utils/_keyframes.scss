@@ -1,0 +1,85 @@
+/* remplissage des coeurs */ 
+@keyframes heart-filler {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* check-slide */ 
+@keyframes check-slide {
+    from {
+        transform: translate(-59px);
+    }
+    to {
+        transform: translate(100% -59px);
+    }
+}
+
+/* rotation icone check slide */
+@keyframes check-circle-rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* translation du prix */ 
+@keyframes price-translation {
+    from {
+        transform: translate(0px);
+        }
+        to {
+            transform: translate(-59px);
+        }
+}
+
+/* réduction texte plats */
+@keyframes text-shrink {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+/* apparition progressive des catégories de plats */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* loader */
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    99% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+    } 
+
+
+@keyframes content-visibility {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+

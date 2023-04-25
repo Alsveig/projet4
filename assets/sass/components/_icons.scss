@@ -1,0 +1,81 @@
+/*header general*/
+header p i {
+    color: #7E7E7E;
+    font-size: 25px;
+}
+
+/*header index*/
+form i,
+.steps i {
+    color: #7E7E7E;
+}
+
+/*section explore index*/
+.steps_circleBackground {
+    background: $primary-color;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+}
+
+.steps i {
+    font-size: 20px;
+    &:hover {
+        color: $primary-color;
+    }
+}
+
+/*section restaurants index*/
+.restaurants {
+    .cardText i {
+        font-size: 25px;
+    }
+    .fa-solid {
+        color: transparent;
+        background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+}
+
+
+
+/*pages restaurants*/
+.fa-arrow-left {
+    color: #353535;
+    font-size: 35px;
+}
+
+.menu h1 {
+    i {
+    color: #101010;
+    font-size: 25px;
+    }
+    .fa-solid {
+        color: transparent;
+        background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+}
+
+.cardText i {
+    font-size: 18px;
+}
+
+.fa-circle-check {
+    font-size: 20px;
+    color: white;
+}
+
+
+footer i {
+    color: white;
+    font-size: 12px;
+}
+

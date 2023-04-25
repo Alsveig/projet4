@@ -1,0 +1,11 @@
+{
+  "name": "projet4",
+  "version": "1.0.0",
+  "description": "projet ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./assets/sass/main.scss:./assets/css/main.css"
+  },
+  "author": "Fiona Duvivier",
+  "license": "ISC"
+}

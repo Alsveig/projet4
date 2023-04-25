@@ -1,0 +1,104 @@
+/*gen*/
+@mixin logo-header__style {
+    font-family: 'Shrikhand';
+    font-size: 30px;
+    font-style: italic;
+}
+
+@mixin logo-footer__style {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Shrikhand';
+}
+
+/*buttons*/
+@mixin button-normal {
+    background: $rounded-button-color;
+    box-shadow: $rounded-button-shadow;
+}
+
+@mixin button-hover {
+    background: $rounded-button-hover-color;
+    box-shadow: $rounded-button-hover-shadow;
+}
+
+/*homepage*/ 
+@mixin home-font {
+    font-family: 'Roboto';
+}
+
+@mixin style-h1-home {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+@mixin style-h2-home {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+@mixin style-p-home {
+    font-size: 16px;
+    font-weight: 500; 
+}
+
+@mixin style-a-home {
+    text-decoration: none;
+    color: white;
+}
+
+@mixin home-card {
+    width: 340px;
+    max-height: 251px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    background: #FFFFFF;
+}
+
+@mixin home-card-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+
+@mixin home-cardText {
+    height: 77px;
+}
+
+/* menus */ 
+@mixin h1-menu {
+    font-family: 'Shrikhand';
+    font-size: 28px;
+    font-weight: 400;
+}
+
+@mixin h2-menu {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 300;
+}
+
+@mixin bordure-h2 {
+    width: 10%;
+    color: $tertiary-color;
+}
+
+@mixin p-menu {
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 300;
+}
+
+@mixin h3-menu {
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@mixin prix-menu {
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 700;
+    color: #353535;
+}

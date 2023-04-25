@@ -1,0 +1,18 @@
+:root {
+    --purple: #9356DC; /* var(--purple) */
+    --dark-blue:  #003A68; /* var(--dark-blue) */
+    --light-blue: #89C8FA; /* var(--light-blue) */
+    --dark-green: #008766; /* var(--dark-green) */
+    --light-green: #99E2D0; /* var(--light-green) */ 
+    --white: #F7F7F7;
+}
+
+@import '../utils/mixins';
+header .logo {
+    @include logo-header__style;
+}
+
+footer .logo {
+    @include logo-footer__style;
+}
+

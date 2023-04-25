@@ -1,0 +1,310 @@
+/*imports*/
+@import '../utils/variables';
+@import '../utils/mixins';
+@import '../components/buttons';
+@import '../components/icons';
+@import '../layout/forms';
+@import '../layout/reusable';
+@import '../base/base';
+@import '../utils/keyframes';
+
+/*texte*/
+h1 {
+    @include style-h1-home;
+    @include home-font;
+}
+
+h2 {
+    @include style-h2-home;
+    @include home-font;
+}
+
+p {
+    @include style-p-home;
+    @include home-font;
+}
+
+a {
+    @include style-a-home;
+    @include home-font;
+}
+
+/*section explore*/
+.explore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    h1 {
+        width: 275px;
+        padding-top: 39px;
+        margin: 0px;
+    }
+    p {
+        width: 315px;
+        margin: 0px 0px 27px 0px;
+    }
+    .button {
+        @include button-normal;
+        padding: 13px 19px 13px 19px;
+        &:hover {
+            @include button-hover;
+            cursor: pointer;
+        }
+    }
+}
+
+/*section howTo */ 
+.howTo {
+    margin: 105px 0px 68px 20px;
+    .steps {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: #F7F7F7;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+        border-radius: 20px;
+        width: 300px;
+        margin: 0px 0px 24px 32px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .steps_circleBackground {
+        position: absolute;
+        left: -15px;
+    }
+    .steps i {
+        padding: 0px 20px 0px 33px;
+    } 
+}
+
+/* restaurants */
+.restaurants {
+    background-color: #F7F7F7;
+}
+
+.restaurants h1 {
+    padding: 54px 0px 20px 30px;
+    margin: 0px;
+}
+
+.restaurants_Liste {
+    margin: 0px 20px 15px 20px;
+}
+
+/*card*/
+.card {
+    position: relative;
+    @include home-card;
+    margin-bottom: 15px;
+    &:hover {
+        cursor: pointer;
+    }
+    .button--squared {
+        position: absolute;
+        margin-top: 15px;
+        right: 15px;
+    }
+    img {
+        @include home-card-img;
+    }
+    .cardText {
+        @include home-cardText;
+        position: relative;
+        h2 {
+            padding: 16px 0px 0px 12px;
+            margin: 0px;
+        }
+        p {
+            padding: 5px 0px 12px 12px;
+            margin: 0px;
+        }
+    }
+    i {
+        position: absolute;
+        left: 300px;
+        bottom: 30px;
+        }
+    .fa-solid {
+        opacity: 0;
+        &:hover {
+            cursor: pointer;
+            opacity: 1;
+            animation-name: heart-filler;
+            animation-duration: 250ms;
+            animation-delay: 0;
+        }
+    }
+}
+
+.footer-homepage {
+    margin-top: 64px;
+}
+
+/* loader */ 
+header, main, footer {
+    opacity: 0;
+    animation: content-visibility 100ms linear 2s forwards;
+}
+
+.loader {
+    opacity: 1;
+    width: 100px;
+    height: 100px;
+    border: 10px solid $tertiary-color;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 200px;
+    left: 130px;
+    animation: loader 2s linear 1 forwards;
+    }
+
+
+/*RESPONSIVE PAD*/
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        .explore {
+            background-color: #F6F6F6;
+            height: 190px;
+            white-space: nowrap;
+            width: 100%;
+            h1 {
+                width: 645px;
+            }
+            p {
+                width: 531px;
+            }
+        }
+        .howTo {
+            background: white;
+            margin-top: 0px;
+            margin-left: 0px;
+            margin-bottom: 0px;
+            width: 100%;
+            height: 200px;
+            h1 {
+                padding: 25px 0px 0px 40px;
+            }
+            .howTo_stepsList {
+                display: flex;
+                flex-direction: row;
+                margin-left: 25px;
+                .steps {
+                    width: 250px;
+                    padding-right: 10px;
+                    margin-right: 40px;
+                }
+            }
+        }
+        .restaurants {
+            width: 100%;
+            h1 {
+                padding-top: 25px;
+                padding-left: 35px;
+                padding-bottom: 40px;
+            }
+            .restaurants_Liste {
+                
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin-left: 115px;
+                .card {
+                    margin-right: 100px;
+                    margin-bottom: 50px;
+                }
+            }
+        }
+        .loader {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 425px;
+        }
+    }
+
+
+
+/*RESPONSIVE DESKTOP*/
+@media screen and (min-width: 1024px) {
+    .explore {
+        background-color: #F6F6F6;
+        margin: auto;
+        max-width: 1440px;
+        width: 100%;
+        height: 250px;
+        white-space: nowrap;
+        h1 {
+            font-size: 40px;
+            width: 645px;
+        }
+        p {
+            margin-top: 18px;
+            font-size: 18px;
+            width: 531px;
+        }
+    }
+    .howTo {
+        margin: auto;
+        max-width: 1440px;
+        width: 100%;
+        background: white;
+        height: 228px;
+        h1 {
+            margin-left: 100px;
+            padding: 50px 0px 25px 25px;
+        }
+        .howTo_stepsList {
+            margin-left: 110px;
+            display: flex;
+            flex-direction: row;
+            .steps {
+                width: 322px;
+                margin-right: 65px;
+            }
+        }
+    }
+    .restaurants {
+        margin: auto;
+        max-width: 1440px;
+        width: 100%;
+        h1 {
+            padding-left: 125px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .restaurants_Liste {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-left: 180px;
+            .card {
+                margin-right: 100px;
+                margin-bottom: 50px;
+                width: 490px;
+                position: relative;
+                i {
+                    position: absolute;
+                    left: 440px;
+                }
+                .fa-solid {
+                    position: absolute;
+                    left: 440px;
+                }
+            }
+        }
+    }
+    .footer-homepage {
+        margin-top: 0px;
+    }
+    .loader {
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        left: 600px;
+    }
+}
+
+
