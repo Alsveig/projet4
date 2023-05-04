@@ -9,16 +9,20 @@
 a {
     color: black;
 }
+
 body {
     background: #f7f1f1;
+    
 }
 
 header {
     position: relative;
+
     .fa-arrow-left {
         position: absolute;
         left: 15px;
         top: 20px;
+
         &:hover {
             cursor: pointer;
         }
@@ -39,22 +43,31 @@ img {
     background: #f7f1f1;
     border-radius: 30px 30px 00px 0px;
     
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;*/
+
     h1 {
         position: relative;
         top: 25px;
         padding-left: 17px;
         margin: 0px;
+        width: 100%;
+        /*display: flex;
+        justify-content: center;*/
         @include h1-menu;
+
         .fa-regular {
-            position: absolute;
-            right: 35px;
-            bottom: 8px;
+        position: absolute;
+        margin-left: 16px;
+        bottom: 8px;
         }
         .fa-solid {
             position: absolute;
-            right: 35px;
+            margin-left: 16px;
             bottom: 8px;
             opacity: 0;
+
             &:hover {
                 opacity: 1;
                 animation-name: heart-filler;
@@ -64,12 +77,14 @@ img {
             }
         }
     }
+
     h2 {
         padding-left: 17px;
         @include h2-menu;
         margin-top: 62px;
         padding-bottom: 5px;
     }
+
     hr {
         @include bordure-h2;
         margin-left: 17px;
@@ -84,10 +99,12 @@ img {
         opacity: 0;
         animation: fade-in 250ms ease-in 0.5s forwards;
     }
+
     .menu_plats {
         opacity: 0;
         animation: fade-in 250ms ease-in 1s forwards;
     }
+
     .menu_desserts {
         opacity: 0;
         animation: fade-in 250ms ease-in 1.5s forwards;
@@ -145,6 +162,7 @@ img {
         height: 69px;
         border-radius: 0px 15px 15px 0px;
         flex-shrink: 0;
+
         i {
             position: relative;
             top: 25px;
@@ -155,18 +173,23 @@ img {
 
 .menu_card {
     &:hover {
-        .menu_card_text h3, p {
+
+        .menu_card_text h3,
+        p {
             animation: text-shrink 1.5s ease-in 0s both;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
         }
+
         .prix {
             animation: price-translation 0.5s ease-in 0s both;
         }
+
         .check-slide {
-           animation: check-slide 0.5s ease-out reverse 0s both;
+            animation: check-slide 0.5s ease-out reverse 0s both;
         }
+
         .fa-circle-check {
             animation: check-circle-rotation 1s cubic-bezier(0.7, 0.3, 0.6, 1);
         }
@@ -179,12 +202,14 @@ img {
     height: 138px;
     position: relative;
     top: 0px;
+
     button {
         width: 186px;
         height: 50px;
         margin: 55px 0px 40px 87px;
         @include button-normal;
         position: relative;
+
         &:hover {
             @include button-hover;
             cursor: pointer;
@@ -192,51 +217,64 @@ img {
     }
 }
 
-/*RESPONSIVE PAD*/ 
+/*RESPONSIVE PAD*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     img {
-        object-fit: cover; 
+        object-fit: cover;
         height: 300px;
         width: 100%;
-    }    
-    
+    }
+
     body {
         background-color: white;
+        align-items: center;
     }
+
     .menu {
         width: 600px;
-        margin: auto;
-        position:static;
+        margin-bottom: -40px;
+        
+
         h1 {
-            width: 300px;
-            margin-left: 150px;
-            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
             .fa-regular {
                 position: absolute;
-                right: -10px;
+                margin-left: 16px;
+                bottom: 10px;
             }
+
             .fa-solid {
                 position: absolute;
-                right: -10px;
+                margin-left: 16px;
+                bottom: 10px;
             }
         }
+
         .menu_starters {
             margin-left: 50px;
         }
+
         .menu_plats {
             margin-left: 50px;
         }
+
         .menu_desserts {
             margin-left: 50px;
         }
+
         .menu_card {
             width: 480px;
         }
     }
+
     .menu_bouton {
         margin: auto;
         width: 600px;
         border-radius: 0px 0px 30px 30px;
+
         .button {
             margin-left: 215px;
         }
@@ -247,51 +285,73 @@ img {
 @media screen and (min-width: 1024px) {
     body {
         background-color: white;
+        align-items: center;
     }
+
     header img {
         height: 400px;
         object-fit: cover;
     }
+
     .img-restaurant--small {
         width: 1440px;
     }
+
     .menu {
         margin-top: -40px;
-        bottom: -40px;
+        margin-bottom: -40px;
         position: relative;
         width: 1055px;
-        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
         h1 {
-            position: relative;
-            margin-left: 373.5px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
             .fa-regular {
+                margin-left: 16px;
                 position: absolute;
-                right: 360px;
+                bottom: 10px;
             }
+
             .fa-solid {
+                margin-left: 16px;
                 position: absolute;
-                right: 360px;
+                bottom: 10px;
             }
         }
     }
+
     .menu_starters {
-        margin-left: 210px;
+        margin-left: 200px;
     }
+
     .menu_plats {
-        margin-left: 210px;
+        margin-left: 200px;
     }
+
     .menu_desserts {
-        margin-left: 210px;
+        margin-left: 200px;
     }
+
+    .menu_card {
+        width: 480px;
+    }
+
     .menu_bouton {
         width: 1055px;
         margin: auto;
+
         .button {
-            margin-top: 0px;
+            margin-top: 50px;
             margin-left: 450px;
         }
     }
+
     .menu_card {
         width: 634px;
-    }  
+    }
 }

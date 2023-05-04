@@ -2421,24 +2421,30 @@ img {
   top: -40px;
   background: #f7f1f1;
   border-radius: 30px 30px 0px 0px;
+  /*display: flex;
+  flex-direction: column;
+  align-items: center;*/
 }
 .menu h1 {
   position: relative;
   top: 25px;
   padding-left: 17px;
   margin: 0px;
+  width: 100%;
+  /*display: flex;
+  justify-content: center;*/
   font-family: "Shrikhand";
   font-size: 28px;
   font-weight: 400;
 }
 .menu h1 .fa-regular {
   position: absolute;
-  right: 35px;
+  margin-left: 16px;
   bottom: 8px;
 }
 .menu h1 .fa-solid {
   position: absolute;
-  right: 35px;
+  margin-left: 16px;
   bottom: 8px;
   opacity: 0;
 }
@@ -2540,7 +2546,8 @@ img {
   left: 17px;
 }
 
-.menu_card:hover .menu_card_text h3, .menu_card:hover p {
+.menu_card:hover .menu_card_text h3,
+.menu_card:hover p {
   animation: text-shrink 1.5s ease-in 0s both;
   white-space: nowrap;
   overflow: hidden;
@@ -2585,24 +2592,26 @@ img {
   }
   body {
     background-color: white;
+    align-items: center;
   }
   .menu {
     width: 600px;
-    margin: auto;
-    position: static;
+    margin-bottom: -40px;
   }
   .menu h1 {
-    width: 300px;
-    margin-left: 150px;
-    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
   .menu h1 .fa-regular {
     position: absolute;
-    right: -10px;
+    margin-left: 16px;
+    bottom: 10px;
   }
   .menu h1 .fa-solid {
     position: absolute;
-    right: -10px;
+    margin-left: 16px;
+    bottom: 10px;
   }
   .menu .menu_starters {
     margin-left: 50px;
@@ -2628,6 +2637,7 @@ img {
 @media screen and (min-width: 1024px) {
   body {
     background-color: white;
+    align-items: center;
   }
   header img {
     height: 400px;
@@ -2638,38 +2648,46 @@ img {
   }
   .menu {
     margin-top: -40px;
-    bottom: -40px;
+    margin-bottom: -40px;
     position: relative;
     width: 1055px;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .menu h1 {
-    position: relative;
-    margin-left: 373.5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
   .menu h1 .fa-regular {
+    margin-left: 16px;
     position: absolute;
-    right: 360px;
+    bottom: 10px;
   }
   .menu h1 .fa-solid {
+    margin-left: 16px;
     position: absolute;
-    right: 360px;
+    bottom: 10px;
   }
   .menu_starters {
-    margin-left: 210px;
+    margin-left: 200px;
   }
   .menu_plats {
-    margin-left: 210px;
+    margin-left: 200px;
   }
   .menu_desserts {
-    margin-left: 210px;
+    margin-left: 200px;
+  }
+  .menu_card {
+    width: 480px;
   }
   .menu_bouton {
     width: 1055px;
     margin: auto;
   }
   .menu_bouton .button {
-    margin-top: 0px;
+    margin-top: 50px;
     margin-left: 450px;
   }
   .menu_card {
