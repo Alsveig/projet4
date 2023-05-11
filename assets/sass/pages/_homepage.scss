@@ -91,6 +91,13 @@ a {
 
 .restaurants_Liste {
     margin: 0px 20px 15px 20px;
+    position: relative;
+    .button--squared {
+        position: absolute;
+        margin-top: 15px;
+        right: 15px;
+        z-index: 1;
+    }
 }
 
 /*card*/
@@ -101,11 +108,11 @@ a {
     &:hover {
         cursor: pointer;
     }
-    .button--squared {
+    /*.button--squared {
         position: absolute;
         margin-top: 15px;
         right: 15px;
-    }
+    }*/
     img {
         @include home-card-img;
     }
@@ -161,7 +168,7 @@ header, main, footer {
     box-sizing: border-box;
     position: absolute;
     top: 200px;
-    left: 500px;
+    left: 140px;
     animation: loader 2s linear 1 forwards;
     }
 
@@ -208,12 +215,24 @@ header, main, footer {
                 padding-left: 35px;
                 padding-bottom: 40px;
             }
-            .restaurants_Liste {
-                
+            .restaurants_Liste {                
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
                 margin-left: 115px;
+                position: relative;
+                .button--squared {
+                    position: absolute;
+                    margin-top: 15px;
+                    right: 125px;
+                    z-index: 1;
+                }
+                #squared--left {
+                    position: absolute;
+                    margin-top: 15px;
+                    right: 570px;
+                    z-index: 1;
+                }
                 .card {
                     margin-right: 100px;
                     margin-bottom: 50px;
@@ -224,7 +243,7 @@ header, main, footer {
             width: 200px;
             height: 200px;
             position: absolute;
-            left: 425px;
+            left: -100px;
         }
     }
 
@@ -283,6 +302,18 @@ header, main, footer {
             flex-direction: row;
             flex-wrap: wrap;
             margin-left: 180px;
+            .button--squared {
+                position: absolute;
+                margin-top: 15px;
+                right: 180px;
+                z-index: 1;
+            }
+            #squared--left {
+                position: absolute;
+                margin-top: 15px;
+                right: 770px;
+                z-index: 1;
+            }
             .card {
                 margin-right: 100px;
                 margin-bottom: 50px;
@@ -306,7 +337,7 @@ header, main, footer {
         width: 250px;
         height: 250px;
         position: absolute;
-        left: 140px;
+        left: -125px;
     }
     .footer-homepage {
         margin-top: 0px;
